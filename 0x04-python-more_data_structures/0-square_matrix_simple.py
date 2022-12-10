@@ -1,3 +1,6 @@
 #!/usr/bin/python3
 def square_matrix_simple(matrix=[]):
-    return [[i**2 for i in row] for row in matrix[:]]
+    new_matrix = []
+    for idx in matrix:
+        new_matrix.append(list(map(lambda x: x*x, idx)))
+    return new_matrix
